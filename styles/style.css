@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Manrope:wght@400;500&family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #3a3a3a;
+  font-family: "Poppins", sans-serif;
+}
+/*--------------
+  Header Styles
+--------------*/
+header {
+  max-width: 1200px;
+  margin: 50px auto 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+/*--------------
+  Common Styles
+--------------*/
+.container {
+  display: flex;
+  gap: 100px;
+  padding: 0 30px 50px;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 20px;
+}
+.btn {
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+  width: 32%;
+  font-weight: 700;
+  padding: 10px 24px;
+  background-color: #e02c6d;
+  border: none;
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn:hover {
+  transform: translateX(5px);
+  box-shadow: -6px 6px 10px rgba(0, 0, 0, 0.25);
+}
+.btn:active {
+  box-shadow: -6px 6px 10px rgba(0, 0, 0, 0.15);
+}
+.arrow {
+  margin-left: 10px;
+}
+/*--------------
+  Main Section Styles
+--------------*/
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/*--------------
+  Hero Section Styles
+--------------*/
+.hero-btn {
+  border-radius: 100px;
+}
+.hero-image {
+  background-image: url("/images/Circle\ design.svg");
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center;
+}
+/*----------------------
+  Feature Section Styles
+------------------------*/
+.feature-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 24px;
+  padding: 30px 0;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+/*--------------------------
+  Collection Section Styles
+---------------------------*/
+.collection-heading {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 50px;
+}
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 0 30px;
+}
+.product-card {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+  transition: 0.3s ease-in;
+}
+.product-card:hover {
+  transform: scale(1.01);
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.15);
+}
+.product-name {
+  font-size: 28px;
+}
+.product-price {
+  font-size: 24px;
+}
+.product-image {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.rating {
+  font-size: 14px;
+  font-weight: 700;
+}
+.color {
+  color: #fb8200;
+}
+.rating i:last-child {
+  color: #333;
+}
+/*--------------------------
+  Newsletter Styles
+---------------------------*/
+.join-section {
+  margin: 50px 0;
+}
+.join-details {
+  display: flex;
+  flex-direction: column;
+}
+.join-image {
+  width: 50%;
+}
+.join-details input,
+textarea {
+  padding: 10px 20px;
+  font-family: "Poppins", sans-serif;
+  margin: 10px 0;
+  text-align: left;
+  border: 1.5px solid #e02c6d;
+  outline: none;
+  border-radius: 2px;
+}
+
+.join-details input:focus,
+textarea:focus {
+  border-bottom: 3px solid #e02c6d;
+}
+.see-more {
+  display: flex;
+  justify-content: flex-end;
+}
+.see-btn {
+  display: inline-block;
+  font-size: 18px;
+  margin-top: 24px;
+  padding: 0 30px;
+  border: none;
+  background-color: transparent;
+  color: #e02c6d;
+  font-weight: 700;
+  transition: 0.3s ease-in;
+}
+
+.see-btn:hover span {
+  border-bottom: 2px solid #e02c6d;
+}
+/*--------------
+  Footer Styles
+--------------*/
+footer {
+  background-color: #0a0826;
+  text-align: center;
+  padding: 50px;
+  color: #ffffff;
+  line-height: 30px;
+}
+.copyright {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  padding-top: 15px;
+}
+.contact-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 10px;
+}
+.link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 28px;
+  background-color: rgba(176, 174, 199, 0.145);
+  padding: 16px;
+  border-radius: 100%;
+  transition: 0.3s ease-in-out;
+}
+.link:hover {
+  background-color: transparent;
+  transform: scale(1.15);
+}
+/* animation */
+.hero-image {
+  animation-duration: 1s;
+  animation-name: right;
+  animation-direction: linear;
+}
+.hero-details {
+  width: 100%;
+  animation-duration: 1s;
+  animation-name: left;
+  animation-direction: linear;
+}
+
+@keyframes right {
+  from {
+    margin-right: -200px;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+@keyframes left {
+  from {
+    margin-left: -800px;
+  }
+  to {
+    margin-left: 0;
+  }
+}
