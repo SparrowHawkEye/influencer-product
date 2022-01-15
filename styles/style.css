@@ -307,6 +307,9 @@ footer {
   .see-more {
     justify-content: center;
   }
+  .join-btn {
+    width: 50%;
+  }
   .joint-heading {
     font-size: 22px;
     padding-bottom: 20px;
