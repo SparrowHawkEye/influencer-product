@@ -8,11 +8,12 @@
 body {
   color: #3a3a3a;
   font-family: "Poppins", sans-serif;
+  position: relative;
 }
 /*--------------
   Header Styles
 --------------*/
-header {
+.header-menu {
   max-width: 1200px;
   margin: 50px auto 50px;
   display: flex;
@@ -250,5 +251,67 @@ footer {
   }
   to {
     margin-left: 0;
+  }
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 866px) and (max-width: 980px) {
+  .products-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .see-more {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 865px) {
+  .hero-container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .hero-image {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-info {
+    flex-wrap: wrap;
+  }
+  .feature-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .products-container {
+    grid-template-columns: repeat(1, 0.7fr);
+    justify-content: center;
+    align-items: center;
+  }
+  .join-image {
+    display: none;
+  }
+  .join-section {
+    justify-content: center;
+  }
+
+  .see-more {
+    justify-content: center;
+  }
+
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .hero-image {
+    display: none;
+  }
+  .hero-btn {
+    width: 78%;
   }
 }
