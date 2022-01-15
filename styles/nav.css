@@ -23,6 +23,9 @@
 .nav-toggler {
   display: none;
 }
+.fa-bars:before {
+  display: none;
+}
 
 @media only screen and (max-width: 865px) {
   .nav-toggler {
@@ -32,6 +35,9 @@
     position: fixed;
     top: 3.5rem;
     left: 3rem;
+  }
+  .fa-bars:before {
+    display: block;
   }
   .nav-items {
     position: fixed;
